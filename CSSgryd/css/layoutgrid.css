@@ -1,0 +1,49 @@
+.janela1 {
+    height: 150px;
+    background-color: blue;
+    flex: 1 1;
+    grid-area: janela1;
+
+}
+
+.janela2 {
+    height: 600px;
+    background-color: brown;
+    flex: 1 1;
+    grid-area: janela2;
+}
+
+.janela3 {
+    height: 150px;
+    background-color: darkorange;
+    flex: 1 1;
+    grid-area: janela3;
+}
+
+.janela4 {
+    height: 450px;
+    background-color: darkblue;
+    flex: 1 1;
+    grid-area: janela4;
+}
+
+.janela5 {
+    height: 600px;
+    background-color: greenyellow;
+    flex: 1 1;
+    grid-area: janela5;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1px 1px;
+    grid-template-areas: 
+    "janela1 janela1 janela1 janela1 janela1"
+    "janela2 janela4 janela4 janela4 janela5"
+    "janela2 janela4 janela4 janela4 janela5"
+    "janela2 janela4 janela4 janela4 janela5"
+    "janela2 janela3 janela3 janela3 janela5"
+    ;
+}
